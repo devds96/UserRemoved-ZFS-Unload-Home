@@ -1,0 +1,11 @@
+[Unit]
+Description=ZFS User Home Locking D-Bus Listener
+After=network.target dbus.service
+
+[Service]
+ExecStart=/usr/local/bin/user_removed_zfs_unload_home.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
