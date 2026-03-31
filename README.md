@@ -23,7 +23,7 @@ To install, perform the following steps as root (`sudo -i`):
 
   0. Inspect the code of this repo.
   1. Copy the service file `user-removed-zfs-unload-home.service` into
-    `/etc/system/systemd` (from the `systemd` directory).
+    `/etc/systemd/system` (from the `systemd` directory).
   2. Copy the python file `user_removed_zfs_unload_home.py` into
     `/usr/local/bin` (from the `src` directory).
   3. `apt install python3-dbus-next`.
